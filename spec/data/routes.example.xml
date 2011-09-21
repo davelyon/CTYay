@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+		<bustime-response>	
+
+			<route>
+				<rt>1</rt>
+				<rtnm>Indiana/Hyde Park</rtnm>
+			</route>		
+
+			<route>
+				<rt>2</rt>
+				<rtnm>Hyde Park Express</rtnm>
+			</route>		
+
+			<route>
+				<rt>3</rt>
+				<rtnm>King Drive</rtnm>
+			</route>		
+
+		</bustime-response>
+

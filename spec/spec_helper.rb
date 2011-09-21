@@ -1,1 +1,2 @@
 require 'ctyay'
+require 'fakeweb'
