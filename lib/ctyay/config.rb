@@ -1,5 +1,11 @@
 module Ctyay
   class Config
-    attr_accessor :bus_api_key
+    def self.bus_api_key= key
+      @@bus_api_key = key
+    end
+
+    def self.bus_api_key
+      @@bus_api_key
+    end
   end
 end
