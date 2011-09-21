@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'ctyay/config'
+
 describe Ctyay::Config do
   context "bus api" do
     it "holds your key" do
