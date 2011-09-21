@@ -7,8 +7,13 @@ module Ctyay
       @common_name = common_name
     end
 
+    def self.route(id)
+      @routes ||= all
+      @routes.select { |c| c.short_name == id }.first
+    end
+
     def self.all
-      parse Nokogiri::XML.parse(Request.new('/getroutes').get)
+      @routes = parse Nokogiri::XML.parse(Request.new('/getroutes').get)
     end
 
     def description
