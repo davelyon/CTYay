@@ -20,6 +20,10 @@ module Ctyay
       [short_name, common_name].join " "
     end
 
+    def directions
+      Nokogiri::XML.parse(Request.new('/getdirections', "&rt=#{short_name}").get).xpath("//dir").map(&:inner_text)
+    end
+
     private
 
     def self.parse(xml)
