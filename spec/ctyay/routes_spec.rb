@@ -24,7 +24,7 @@ describe Ctyay::Route do
       it { subject.description.should == "8 Halsted" }
     end
 
-    describe "#direction" do
+    describe "#directions" do
       let(:route_xml) { File.read("spec/data/directions.example.xml") }
       before do
         Ctyay::Route.should_receive(:route).with("3").and_return Ctyay::Route.new("3", "King Drive")
