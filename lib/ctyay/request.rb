@@ -17,5 +17,9 @@ module Ctyay
     def self.routes
       new("/getroutes").get
     end
+
+    def self.directions(route)
+      new("/getdirections", "&rt=#{route}").get
+    end
   end
 end

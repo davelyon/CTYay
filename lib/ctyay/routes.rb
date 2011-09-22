@@ -21,7 +21,7 @@ module Ctyay
     end
 
     def directions
-      Nokogiri::XML.parse(Request.new('/getdirections', "&rt=#{short_name}").get).xpath("//dir").map(&:inner_text)
+      Nokogiri::XML.parse(Request.directions(short_name)).xpath("//dir").map(&:inner_text)
     end
 
     def stops(direction)
