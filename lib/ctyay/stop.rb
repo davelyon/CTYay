@@ -3,7 +3,7 @@ module Ctyay
     attr_reader :id, :name, :latitude, :longitude
 
     def self.all(route_id, direction)
-      parse Nokogiri::XML.parse(Request.new('/getstops', "&rt=#{route_id}&dir=#{URI.escape(direction)}").get)
+      parse Nokogiri::XML.parse Request.stops(route_id, direction)
     end
 
     def initialize(id, name, latitude, longitude)
