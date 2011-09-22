@@ -33,6 +33,15 @@ describe Ctyay::Route do
         Ctyay::Route.route("3").directions.should == ["North Bound", "South Bound"]
       end
     end
+
+    describe "#stops" do
+      before do
+        Ctyay::Stop.should_receive(:all).with("8", "East Bound").and_return([])
+      end
+      it "delegates to Stop.all" do
+        subject.stops("East Bound").should == []
+      end
+    end
   end
 
   context "accesing api data" do

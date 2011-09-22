@@ -24,6 +24,10 @@ module Ctyay
       Nokogiri::XML.parse(Request.new('/getdirections', "&rt=#{short_name}").get).xpath("//dir").map(&:inner_text)
     end
 
+    def stops(direction)
+      Stop.all(short_name, direction)
+    end
+
     private
 
     def self.parse(xml)
