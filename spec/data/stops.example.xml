@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+		<bustime-response>
+				
+			<stop>
+			<stpid>4727</stpid>
+			<stpnm>1633 W Madison</stpnm>
+			<lat>41.881408012088</lat>
+			<lon>-87.668516635895</lon>
+			</stop>
+				
+			<stop>
+			<stpid>449</stpid>
+			<stpnm>Washington &amp; Wabash</stpnm>
+			<lat>41.883229232153</lat>
+			<lon>-87.625987529755</lon>
+			</stop>
+
+		</bustime-response>
+
+		
