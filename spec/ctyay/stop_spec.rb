@@ -11,7 +11,6 @@ describe Ctyay::Stop do
     it { subject.name.should == "Lake/Halsted" }
   end
 
-
   describe "#latitude" do
     it { subject.latitude.should == "42.88842" }
   end
