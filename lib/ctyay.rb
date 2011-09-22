@@ -7,4 +7,5 @@ module Ctyay
   autoload(:Route, 'ctyay/routes')
   autoload(:Request, 'ctyay/request')
   autoload(:Stop, 'ctyay/stop')
+  autoload(:CTATime, 'ctyay/time')
 end

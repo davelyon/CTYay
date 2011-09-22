@@ -25,5 +25,9 @@ module Ctyay
     def self.stops(route_id, direction)
       new('/getstops', "&rt=#{route_id}&dir=#{URI.escape(direction)}").get
     end
+
+    def self.time
+      new('/gettime').get
+    end
   end
 end
