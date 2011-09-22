@@ -12,8 +12,8 @@ You'll need an API Key from the CTA first.
 
 ### Get Routes:
 
-	Routes.all # Get all routes (A collection of Route objects)
-	route = Routes.route("20")
+	Route.all # Get all routes (A collection of Route objects)
+	route = Route.route("20")
 	route.short_name # 'rt' element or the number of the route "8" or "X20"
 	route.common_name # 'rtnm' element or the common name "Madison" for 20 route
 	route.description # Convenience method for short + common name -> "8 Halsted"
