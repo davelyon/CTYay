@@ -13,5 +13,9 @@ module Ctyay
     def url
       @request.url
     end
+
+    def self.routes
+      new("/getroutes").get
+    end
   end
 end

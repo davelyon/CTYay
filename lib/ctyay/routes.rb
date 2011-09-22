@@ -13,7 +13,7 @@ module Ctyay
     end
 
     def self.all
-      @routes = parse Nokogiri::XML.parse(Request.new('/getroutes').get)
+      @routes = parse Nokogiri::XML.parse(Request.routes)
     end
 
     def description
